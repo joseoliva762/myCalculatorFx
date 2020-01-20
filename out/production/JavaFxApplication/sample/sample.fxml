@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="31.0" prefWidth="799.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/11.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane layoutX="-62.0" layoutY="-78.0" prefHeight="57.0" prefWidth="394.0" style="-fx-background-color: #d5dbdb;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="289.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox layoutX="-67.0" layoutY="-21.0" prefHeight="57.0" prefWidth="61.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fx:id="Accenture" fitHeight="61.0" fitWidth="59.0" onMouseClicked="#onAccentureButtonClicked" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="3.0" left="10.0" right="3.0" top="3.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@images/accenture_logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox layoutX="61.0" prefHeight="68.0" prefWidth="151.0">
+               <children>
+                  <Label prefHeight="29.0" prefWidth="113.0" text="Enter Operation:" textAlignment="CENTER">
+                     <font>
+                        <Font name="Microsoft New Tai Lue Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="18.0" left="20.0" right="20.0" top="19.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="193.0" prefHeight="68.0" prefWidth="251.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="193.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <TextField fx:id="enterOperation" prefHeight="57.0" prefWidth="243.0" promptText="Enter Your Full Operation Without Spaces">
+                     <font>
+                        <Font name="Microsoft Tai Le Bold" size="10.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="3.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="444.0" prefHeight="68.0" prefWidth="73.0" style="-fx-background-color: #626567;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="444.0" AnchorPane.rightAnchor="282.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button layoutX="5.0" layoutY="3.0" mnemonicParsing="false" onMouseClicked="#onCalculateButtonClicked" prefHeight="58.0" prefWidth="62.0" style="-fx-background-color: #626567;" text="=" textFill="WHITE" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="3.0">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="27.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="516.0" layoutY="-86.0" prefHeight="68.0" prefWidth="227.0" style="-fx-background-color: #d5dbdb;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="516.0" AnchorPane.rightAnchor="56.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="resultOfOperation" layoutX="7.0" layoutY="5.0" prefHeight="58.0" prefWidth="216.0" promptText="Final Result..." AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font name="Microsoft Tai Le Bold" size="10.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <HBox layoutX="740.0" layoutY="-16.0" prefHeight="68.0" prefWidth="59.0" style="-fx-background-color: #c0392b;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="740.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="60.0" onMouseClicked="#onExitButtonClicked" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets bottom="8.0" left="5.0" right="3.0" top="10.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@images/exit.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
